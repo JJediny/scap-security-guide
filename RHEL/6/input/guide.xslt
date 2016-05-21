@@ -19,6 +19,8 @@
 		<!-- <xsl:apply-templates select="document('profiles/desktop.xml')" /> -->
 		<xsl:apply-templates select="document('profiles/server.xml')" />
 		<!-- <xsl:apply-templates select="document('profiles/ftp.xml')" /> -->
+		<xsl:apply-templates select="document('profiles/stig-rhel6-workstation-upstream.xml')" />
+		<xsl:apply-templates select="document('profiles/stig-rhel6-server-gui-upstream.xml')" />
 		<xsl:apply-templates select="document('profiles/stig-rhel6-server-upstream.xml')" />
 		<xsl:apply-templates select="document('profiles/usgcb-rhel6-server.xml')" />
 		<xsl:apply-templates select="document('profiles/rht-ccp.xml')" />
@@ -60,6 +62,7 @@
       <xsl:apply-templates select="document('xccdf/system/software/disk_partitioning.xml')" />
       <xsl:apply-templates select="document('xccdf/system/software/updating.xml')" />
       <xsl:apply-templates select="document('xccdf/system/software/integrity.xml')" />
+      <xsl:apply-templates select="document('xccdf/system/software/gnome.xml')" />
     </xsl:copy>
   </xsl:template>
 
